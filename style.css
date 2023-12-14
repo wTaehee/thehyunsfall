@@ -146,16 +146,7 @@ h2 {
   animation-name: scroll-y;
 }
 /* Element styles */
-.marquee svg {
-  display: grid;
-  place-items: center;
-  width: var(--size);
-  fill: var(--color-text);
-  background: var(--color-bg-accent);
-  aspect-ratio: 16/9;
-  padding: calc(var(--size) / 10);
-  border-radius: 0.5rem;
-}
+
 
 .marquee--vertical svg {
   aspect-ratio: 1;
@@ -188,10 +179,12 @@ h2 {
 @media (max-width: 768px) {
 
   h1 {
+    top:4px;
     font-size: 1.7rem; /* Larger font size for mobile */
   }
 
   h2 {
+    bottom: 0;
     font-size: 1.7rem; /* Larger font size for mobile */
   }
 

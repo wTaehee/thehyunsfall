@@ -204,5 +204,6 @@
   .right-column {
     padding: 20px; /* Adjust padding for mobile view */
     margin: 0 0 20px 0; /* Add margin between columns in mobile view */
+    overflow: visible;
   }
 }

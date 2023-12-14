@@ -189,3 +189,20 @@
   display: grid;
   place-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change to a single column layout for smaller screens */
+    padding: 5%; /* Adjust padding for mobile view */
+  }
+  .column {
+    flex: 1; /* Ensure both columns take up full width in mobile view */
+    padding: 10px; /* Adjust padding for mobile view */
+    margin: 0; /* Remove margin between columns in mobile view */
+  }
+  .left-column,
+  .right-column {
+    padding: 20px; /* Adjust padding for mobile view */
+    margin: 0 0 20px 0; /* Add margin between columns in mobile view */
+  }
+}

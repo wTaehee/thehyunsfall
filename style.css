@@ -177,61 +177,81 @@ h2 {
   height: 100vh;
 }
 
-/* Toggle direction button */
-.toggle {
-  --size: 3rem;
-  position: relative;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: var(--size);
-  height: var(--size);
-  font: inherit;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 50%;
-  color: inherit;
-  background-color: var(--color-bg-accent);
-  z-index: 3;
-}
 
-.toggle:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-text);
-}
-
-.toggle span {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: calc(100% + 0.4em);
-  width: fit-content;
-  white-space: nowrap;
-  transform: translateY(-50%);
-  animation: fade 400ms 4s ease-out forwards;
-  user-select: none;
-}
-
-.toggle img {
-  --size: 1.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: var(--size);
-  height: var(--size);
-  fill: currentcolor;
-  transform: translate(-50%, -50%);
-  transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.toggle--vertical img {
-  transform: translate(-50%, -50%) rotate(-90deg);
-}
 
 @keyframes fade {
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.7rem; /* Larger font size for mobile */
+  }
+
+  h2 {
+    font-size: 1.7rem; /* Larger font size for mobile */
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row; /* Display as row to create two columns */
+    gap: var(--gap); /* Adjust the gap between columns */
+    overflow: hidden;
+    padding: 0 10px; /* Add padding between columns */
+  }
+
+  .marquee {
+    flex: 1; /* Each marquee container takes half the available space */
+    display: flex;
+    flex-direction: column; /* Display links in a column */
+    overflow: hidden;
+    gap: var(--gap); /* Adjust the gap between links */
+    mask-image: none; /* Remove the mask for better visibility */
+  }
+
+  .marquee_group {
+    /* Existing styles for the first column */
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Display links in a column */
+    gap: var(--gap); /* Adjust the gap between links */
+    animation: scroll-y var(--duration) linear infinite; /* Use vertical animation */
+  }
+
+  .wrapper--vertical {
+    flex-direction: column;
+    width: 100wh;
+  }
+
+ 
+ .marquee--reverse {
+    /* Existing styles for the second column */
+    flex-direction: column-reverse; /* Reverse the order of links */
+  }
+
+  .marquee--reverse .marquee_group {
+    /* Existing styles for the second column */
+    animation: scroll-y-reverse var(--duration) linear infinite; /* Reverse vertical animation */
+  }
+
+  @keyframes scroll-y {
+    from {
+      transform: translateY(0); /* Start from the top */
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap))); /* Move to the bottom */
+    }
+  }
+
+  @keyframes scroll-y-reverse {
+    from {
+      transform: translateY(calc(-100% - var(--gap))); /* Start from the bottom */
+    }
+    to {
+      transform: translateY(0); /* Move to the top */
+    }
   }
 }

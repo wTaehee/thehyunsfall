@@ -240,12 +240,34 @@ a {
     text-decoration: none;
    }
 
-@media screen and (max-width: 900px) {
+   @media screen and (max-width: 768px) {
 
-   img {
-    width: 50px;
-    height: 22px;
-    margin-bottom: 2.5px;
+    .slider-holder {
+      width:90%;
+      
     }
-
-}
+    
+        .image-holder {
+          width: 100%; /* Adjust the width of the image holder for mobile screens */
+          
+        }
+      
+        .image-wrapper {
+          width: 200%; /* Adjust the width of the image wrapper for mobile screens */
+          padding-left: 25px;
+      
+        }
+    
+        .slider-image {
+          width: 49%; /* Adjust the width to fit within the image holder */
+          margin: 30px auto; /* Center the content */
+          font-size: 14px;
+        }
+      
+        .slider-image h2,
+        .slider-image p {
+          text-align: center; /* Center the text */
+          margin-left: 0; /* Remove left margin */
+          font-size: 13px;
+        }
+      }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>출근길 Way to Work</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+      </style>
+    <script>
+        function scrollToTop() {
+    setTimeout(() => {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, 0);
+}
+    </script>
+</head>
+<body>
+    <header class=""><a href="../../../antpyramid/index.html">←</a></header>
+    <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+    
+        <div class="image-holder">
+            
+            <div class="image-wrapper">
+                <div class="slider-image">
+                    <h2><br><br><br>출근길</h2>
+                    <img src="../../../assets/work-kr.png" class="work-kr" />
+                </div>
+                <div class="slider-image">
+                    <h2><br><br><br>Way to Work</h2>
+                    <img src="../../../assets/work-en.png" class="work-en" />
+                </div>
+            </div>
+        </div>
+    
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change" onclick="scrollToTop()">한</a>
+            <a href="#slider-image-2" class="slider-change" onclick="scrollToTop()">En</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -168,7 +168,9 @@ h2 {
   height: 100vh;
 }
 
-
+.eg {
+  font-family: "century";
+}
 
 @keyframes fade {
   to {
@@ -186,6 +188,10 @@ h2 {
   h2 {
     bottom: 0;
     font-size: 1.7rem; /* Larger font size for mobile */
+  }
+  
+  .kr {
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
 
   .wrapper {

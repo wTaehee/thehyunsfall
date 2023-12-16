@@ -43,16 +43,12 @@
     font-family: "century";
   }
 
-  h1 {
-    font-family: "Nanum Myeongjo";
-  }
-
-  h2 {
-    font-family: "Nanum Myeongjo";
+  .kr {
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
 
   p {
-    font-family: "Nanum Myeongjo";
+  
     line-height: 2;
   }
   

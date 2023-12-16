@@ -1,321 +1,274 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
 }
 
 
 
 body {
-    padding: 20px;
-    background-image: url('../../../assets/background3-blur.gif'); /* Set the background image */
-    background-repeat: repeat; 
-   
+  padding: 20px;
+  background-image: url('../../../assets/background3-blur.gif'); /* Set the background image */
+  background-repeat: repeat; 
+ 
 
 }
 header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-    z-index: 13;
-  }
-
-h3 {
-  text-align: left; /* Set text alignment to left */
-    margin-left: 24%; /* Optional: Add some left margin for better readability */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  z-index: 13;
 }
 
-.eg{
-  font-family: "century";
+.slider-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  
 }
 
 p {
-    text-align: left; /* Set text alignment to left */
-    margin-left: 20px; /* Optional: Add some left margin for better readability */
+  text-align: justify;
 }
 
-.tab {
-  display: inline-block;
-  margin-left: 1em;
-}
-.tabkr {
-  display: inline-block;
-  margin-left: -1em;
+.slider-holder {
+  width:50%;
+  overflow: hidden;
+  /* height: 600px; */
+  background-color: rgba(121, 119, 117, 0.5);
+  position: relative;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 16%;  */
 }
 
-  .slider-holder {
-    width:80%;
-    overflow: hidden;
-    /* height: 600px; */
-    background-color: rgba(121, 119, 117, 0.5);
-    position: relative;
-    margin: 0 auto; /* Center horizontally */
-    border-radius: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 16%;  */
-  }
-
-  .slider-holder::-webkit-scrollbar {
-    display: none;
+.slider-holder::-webkit-scrollbar {
+  display: none;
 }
 .image-holder {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+width: 100%;
+position: relative;
+overflow: hidden;
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
 }
 
 .image-wrapper {
-  display: flex;
-  width: 200%;
-  transition: transform 0.5s ease;
-  margin: 15px auto;
+display: flex;
+width: 200%;
+transition: transform 0.5s ease;
 }
 
 .slider-image {
-  width: 40%;
-  flex: 0 0 auto;
-  margin: 10px auto 0;
-  padding: 0 10px;
+width: 50%;
+flex: 0 0 auto;
 }
 
-.half-line {
-  width: 40%; /* Adjust the width as needed */
-  margin-left: 10%; /* Reset margin */
-  border: none; /* Remove default border */
-  height: 1px; /* Set height to create a horizontal line */
-  background-color: black; /* Change color if necessary */
-}
 
-.three-column-layout {
-  display: flex;
-  /* justify-content: space-between; */
-}
-
-.column {
-  flex: 1;
-  padding: 0 15px; /* Add padding between columns */
-}
-
-.column2 {
-  flex: 0 0 auto;
-  width: 10%; /* Adjust the width of the columns as needed */
-  padding: 0 7.5px; /* Add padding between columns */
-}
-
-/* .three-column-layout .column:nth-child(2) {
-  width: 5%; 
-} */
-
-/* Optionally, adjust other styles for h2 and p elements */
-.slider-image h2 {
-  text-align: left !important;
-  margin-left: 20%;
-}
-
-.slider-image p {
-  text-align: left !important;
-  margin-left: 20%;
-}
-
-.work-kr, .work-en {
-  width: 100%;
-  height: auto;
-}
 
 #slider-image-1:target ~ .image-holder .image-wrapper {
-  transform: translateX(0%);
+transform: translateX(0%);
 }
 
 #slider-image-2:target ~ .image-holder .image-wrapper {
-  transform: translateX(-50%);
+transform: translateX(-50%);
 }
 
 #slider-image-1:target ~ .image-holder .slider-image:nth-child(2),
 #slider-image-2:target ~ .image-holder .slider-image:nth-child(1) {
-  opacity: 0;
+opacity: 0;
 }
 
 
-  .slider-holder h2,
-  .slider-holder p {
-    width: 100%; /* Each text takes half the container width */
-    padding: 0 20px;
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+.slider-holder h2,
+.slider-holder p {
+  width: 100%; /* Each text takes half the container width */
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Hide the second text initially */
+/* Hide the second text initially */
 #slider-image-2 {
-  transform: translateX(100%);
+transform: translateX(100%);
 }
 
 /* Adjust the left position for texts based on the target */
 #slider-image-1:target ~ .text-holder {
-  transform: translateX(0%);
+transform: translateX(0%);
 }
 
 #slider-image-2:target ~ .text-holder {
-  transform: translateX(-50%);
+transform: translateX(-50%);
 }
 
- 
-  .button-holder
-  {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Align buttons horizontally */
-    padding-bottom: 20px; /* Adjust as needed for spacing */
-  }
- 
-  .slider-change {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px; /* Adjust the width and height to make the buttons smaller */
-    height: 30px;
-    border-radius: 50%; /* Make it circular */
-    background-color: rgba(121, 119, 117);
-    margin-right: 10px;
-    cursor: pointer;
-    font-size: 14px; /* Reduce the font size for the letters */
-    color: white;
+
+.button-holder
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Align buttons horizontally */
+  padding-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.slider-change {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Adjust the width and height to make the buttons smaller */
+  height: 30px;
+  border-radius: 50%; /* Make it circular */
+  background-color: rgba(121, 119, 117);
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px; /* Reduce the font size for the letters */
+  color: white;
 }
 
 .slider-change span {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
-  .topnav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav-right {
-    margin-left: auto;
-  }
-  
-  .icon {
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropbtn {
-    background-color: transparent;
-    color: white;
-    padding: 8px 50px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-   
-  }
-  
-  .dropdown-menu:hover .dropdown-content {
-    display: block;
-  }
-img {
-    width: 180px;
-    height: 100px;
-    margin-bottom: 30px;
+
+.topnav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
 }
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-right {
+  margin-left: auto;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 8px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+ 
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+/* img {
+  width: 180px;
+  height: 100px;
+  margin-bottom: 30px;
+} */
 
 div {
-    text-align: center;
+  text-align: center;
 }
 a {
-    color: inherit;
-    text-decoration: none;
-   }
+  color: inherit;
+  text-decoration: none;
+ }
 
-   @media screen and (max-width: 768px) {
+ /* .mobile-only {
+  display: none;
+ } */
 
-    .slider-holder {
-      width:90%;
-      
+
+ @media screen and (max-width: 768px) {
+  /* .desktop-only {
+    display: none;
+  }
+
+  /* .mobile-only {
+    display: block;
+    width: 50%; 
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto; 
+  } */ 
+
+  .slider-holder {
+    justify-content: space-between;
+    width:95%;
+  
+  }
+
+  .image-holder {
+    width: 100%;
+   
+
+  }
+  
+
+
+  .image-wrapper {
+   margin:0;
+    width:100%;
+    
     }
-    
-        .image-holder {
-          width: 100%; /* Adjust the width of the image holder for mobile screens */
-          
-        }
-      
-        .image-wrapper {
-          width: 200%; /* Adjust the width of the image wrapper for mobile screens */
-          padding-left: 25px;
-      
-        }
-    
-        .slider-image {
-          width: 50%; /* Adjust the width to fit within the image holder */
-          margin: 30px auto; /* Center the content */
-          font-size: 14px;
-        }
 
-        .slider-image img {
-          width: 100%;
-          height: auto;
-          /* margin-bottom: 2.5px; */
-          }
-    
-      
-          sup {
-            font-size: 11px;
-          }
+.slider-image img {
+width: calc(400% / 2);
+height: auto;
+margin-bottom: 0;
+}
 
-        .slider-image h2,
-        .slider-image p
-        {
-          text-align: center; /* Center the text */
-          margin-left: 0; /* Remove left margin */
-          font-size: 12px;
-        }
-      }
+.slider-image {
+width:50%;
+flex: 0 0 auto;
+
+}
+  
+
+}

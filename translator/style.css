@@ -177,7 +177,9 @@
     font-family: "adobe-myungjo-std", sans-serif;
     line-height: 1.6;
   }
-
+a {
+  color: skyblue;
+}
   .pquote {
     
     font-size: 1.15rem;

@@ -14,7 +14,7 @@
     width: 100%;
     min-height: 100vh;
     font-size: 1rem;
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+    
     line-height: 1.5;
     color: var(--color-text);
     background-color: var(--color-bg);
@@ -152,34 +152,36 @@
 
  
   h3 {
-    font-family: "adobe-myungjo-std", sans-serif;
+    
     text-align: center;
   }
   
   h1 {
-    font-family: "adobe-myungjo-std", sans-serif;
+   
     text-align: center;
   }
   h2 {
-    font-family: "adobe-myungjo-std", sans-serif;
+  
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
   }
   
   p {
-    font-family: "adobe-myungjo-std", sans-serif;
+   
     line-height: 1.6;
   }
 
   .pquote {
-    font-family: "adobe-myungjo-std", sans-serif;
+   
     margin: 20px;
     font-size: .9rem;
     line-height: 1.6;
   
   }
-
+.kr {
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+}
   .eg {
     font-family: "century";
   }
@@ -194,7 +196,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .container {
     flex-direction: column; /* Change to a single column layout for smaller screens */
     padding: 5%; /* Adjust padding for mobile view */

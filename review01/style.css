@@ -13,7 +13,7 @@
     gap: var(--gap);
     width: 100%;
     min-height: 100vh;
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+   
     font-size: 1rem;
     line-height: 1.5;
     color: var(--color-text);
@@ -149,30 +149,35 @@
     text-align: center;
   }
   h2 {
-    font-family: "adobe-myungjo-std", sans-serif;
+    
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
   }
   
   p {
-    font-family: "adobe-myungjo-std", sans-serif;
+
     line-height: 1.6;
   }
 
   .pquote {
-    font-family: "adobe-myungjo-std", sans-serif;
+    
     margin: 20px;
     font-size: .9rem;
     line-height: 1.6;
   
   }
-
+a {
+  color: skyblue;
+}
   .tab {
     display: inline-block;
     margin-left: 1em;
   }
 
+ .kr {
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+ }
   .eg {
     font-family: "century";
   }
@@ -190,7 +195,7 @@
   place-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .container {
     flex-direction: column; /* Change to a single column layout for smaller screens */
     padding: 5%; /* Adjust padding for mobile view */

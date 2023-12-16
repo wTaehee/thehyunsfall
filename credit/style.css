@@ -159,7 +159,7 @@ p {
   font-family: "century";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .container {
     flex-direction: column; /* Change to a single column layout for smaller screens */
     padding: 5%; /* Adjust padding for mobile view */

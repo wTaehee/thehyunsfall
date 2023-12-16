@@ -123,7 +123,7 @@ a {font-family: "이슬아손글씨";
     text-decoration: none;
    }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
 
    img {
     width: 24%;

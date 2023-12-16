@@ -14,7 +14,7 @@
     gap: var(--gap);
     width: 100%;
     min-height: 100vh;
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+   
     font-size: 1rem;
     line-height: 1.5;
     color: var(--color-text);
@@ -180,6 +180,10 @@
 a {
   color: skyblue;
 }
+
+.kr {
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+}
   .pquote {
     
     font-size: 1.15rem;
@@ -196,7 +200,7 @@ a {
     margin-left: -1em;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .container {
       flex-direction: column; /* Change to a single column layout for smaller screens */
       padding: 5%; /* Adjust padding for mobile view */

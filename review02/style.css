@@ -101,7 +101,9 @@
     display: block;
   }
 
-
+a {
+  color:skyblue;
+}
   .work-en {
     /* Your existing properties */
     display: grid;

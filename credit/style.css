@@ -7,7 +7,7 @@
 body {
   display: grid;
   align-content: center;
-  overflow: hidden;
+  overflow: auto;
   background-image: url('../assets/background4.gif');
   background-repeat: repeat;
   gap: var(--gap);

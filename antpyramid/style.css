@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
 }
 :root {
   --color-text: black;
@@ -38,7 +38,7 @@ header {
     left: 0;
     right: 0px;
     justify-content: space-between;
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     align-items: center;
     padding: 10px 20px;
     color: black;
@@ -76,7 +76,7 @@ header {
   
   .dropbtn {
     background-color: transparent;
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     color: white;
     padding: 8px 50px;
     border: none;
@@ -96,7 +96,7 @@ header {
   .dropdown-content a {
     color: black;
     padding: 8px 16px; /* Adjust padding as needed */
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     font-size: 0.8em; /* You can adjust this value to make the text smaller */
     text-decoration: none;
     display: block;
@@ -118,7 +118,7 @@ img {
 div {
     text-align: center;
 }
-a {font-family: "이슬아손글씨";
+a {font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     color: black;
     text-decoration: none;
    }

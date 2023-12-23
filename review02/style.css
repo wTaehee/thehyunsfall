@@ -31,7 +31,7 @@
     left: 0;
     right: 0;
     justify-content: space-between;
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     align-items: center;
     padding: 10px 20px;
     color: white;
@@ -68,7 +68,7 @@
   
   .dropbtn {
     background-color: transparent;
-    font-family: "이슬아손글씨";
+    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     color: white;
     padding: 8px 50px;
     border: none;
@@ -128,7 +128,7 @@ a {
   .right-column {
     flex: 1;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     top: 0;
     padding: 40px;
     backdrop-filter: blur(8px); /* Apply blur effect */
@@ -136,6 +136,17 @@ a {
     border-radius: 20px; /* Add border-radius to the columns */
     margin: 10px; /* Create some space between columns and container */
     color:white;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+
+  .left-column::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .right-column::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
   }
   
   .left-column::before,

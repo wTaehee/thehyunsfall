@@ -78,6 +78,7 @@ header {
     background-color: transparent;
     font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     color: white;
+    font-size: 17px;
     padding: 8px 50px;
     border: none;
     cursor: pointer;

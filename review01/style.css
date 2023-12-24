@@ -67,6 +67,7 @@
   }
   
   .dropbtn {
+    font-size: 17px;
     background-color: transparent;
     font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
     color: white;

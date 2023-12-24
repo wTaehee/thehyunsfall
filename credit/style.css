@@ -70,6 +70,7 @@ header {
 .dropbtn {
   background-color: transparent;
   font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+  font-size: 17px;
   color: white;
   padding: 8px 50px;
   border: none;

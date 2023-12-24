@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
   
   body {
@@ -13,7 +14,7 @@
     gap: var(--gap);
     width: 100%;
     min-height: 100vh;
-   
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: var(--color-text);

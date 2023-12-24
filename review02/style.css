@@ -129,7 +129,7 @@ a {
   .right-column {
     flex: 1;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     top: 0;
     padding: 40px;
     backdrop-filter: blur(8px); /* Apply blur effect */
@@ -139,7 +139,7 @@ a {
     color:white;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
+    /* overflow-y: scroll;  */
   }
 
   .left-column::-webkit-scrollbar {
@@ -231,7 +231,7 @@ a {
 
   .left-column,
   .right-column {
-    padding: 20px; /* Adjust padding for mobile view */
+    padding: -20px; 
     margin: 0 0 20px 0; /* Add margin between columns in mobile view */
   }
 

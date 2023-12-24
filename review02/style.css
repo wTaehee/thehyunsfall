@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+ 
   }
   
   body {
@@ -198,7 +198,7 @@ a {
   font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
 }
   .eg {
-    font-family: "century", serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
 
   img {

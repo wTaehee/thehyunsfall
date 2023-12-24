@@ -169,7 +169,7 @@ h2 {
 }
 
 .eg {
-  font-family: "century";
+  font-family: "century", serif;
 }
 
 @keyframes fade {

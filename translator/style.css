@@ -212,7 +212,7 @@ a {
       text-align: justify;
       padding: 30px; /* Adjust padding for mobile view */
       margin: 0 0 30px 0; /* Add margin between columns in mobile view */
-      overflow: visible;
+      overflow: auto;
     }
     ol {
       margin-left: 5%;

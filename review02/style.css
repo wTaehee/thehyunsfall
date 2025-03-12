@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     align-items: center;
     padding: 10px 20px;
     color: white;
@@ -196,10 +196,10 @@ a {
   
   }
 .kr {
-  font-family: sans-serif;
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
 }
   .eg {
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
 
   img {

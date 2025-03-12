@@ -159,7 +159,7 @@ p {
 }
 
 .eg {
-  font-family: sans-serif;
+  font-family: "century", serif;
 }
 
 @media screen and (max-width: 1100px) {

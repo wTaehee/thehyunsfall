@@ -38,7 +38,7 @@ header {
     left: 0;
     right: 0px;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     align-items: center;
     padding: 10px 20px;
     color: black;
@@ -76,7 +76,7 @@ header {
   
   .dropbtn {
     background-color: transparent;
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     color: white;
     font-size: 17px;
     padding: 8px 50px;

@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     align-items: center;
     padding: 10px 20px;
     color: white;
@@ -40,11 +40,11 @@
   }
 
   .eg {
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   }
 
   .kr {
-  font-family: sans-serif;
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
 }
 
   p {
@@ -161,18 +161,18 @@
   }
 
   h1 {
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     text-align: center;
   }
   h2 {
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
   }
   
   p {
-    font-family: sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     line-height: 1.6;
   }
 a {
@@ -180,7 +180,7 @@ a {
 }
 
 .kr {
-  font-family: sans-serif;
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
 }
   .pquote {
     

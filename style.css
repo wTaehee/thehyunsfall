@@ -27,7 +27,7 @@ body {
   gap: var(--gap);
   width: 100%;
   min-height: 100vh;
-  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--color-text);
@@ -40,8 +40,9 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2; /* Set a higher z-index to keep it above the background */
-  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
-  font-size: 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.65rem;
+  -webkit-text-stroke: black 1px;
   text-shadow:15px 15px 15px rgba(0, 0, 0, 0.904);
   /* -webkit-text-stroke: rgba(0, 0, 0) .2px; */
   color: var(--color-text); /* Use your desired text color */
@@ -54,9 +55,10 @@ h2 {
   text-align: center;
   transform: translateX(-50%);
   z-index: 1;
-  font-family: "century";
-  font-size: 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.85rem;
   text-shadow:15px 15px 15px rgba(0, 0, 0, 0.904);
+  -webkit-text-stroke: black 1px;
   /* -webkit-text-stroke: rgba(0, 0, 0).1px; */
 }
 
@@ -169,7 +171,7 @@ h2 {
 }
 
 .eg {
-  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+  font-family: sans-serif;
 }
 
 @keyframes fade {
@@ -191,7 +193,7 @@ h2 {
   }
   
   .kr {
-    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
+    font-family: sans-serif;
   }
 
   .wrapper {

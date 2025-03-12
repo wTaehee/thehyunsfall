@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     justify-content: space-between;
-    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     align-items: center;
     padding: 10px 20px;
     color: white;
@@ -83,7 +83,7 @@
   
   .dropbtn {
     background-color: transparent;
-    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     font-size: 17px;
     color: white;
     padding: 8px 50px;
@@ -95,7 +95,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -160,18 +160,18 @@
   }
 
   h1 {
-    font-family: "adobe-myungjo-std", sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     text-align: center;
   }
   h2 {
-    font-family: "adobe-myungjo-std", sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
   }
   
   p {
-    font-family: "adobe-myungjo-std", sans-serif;
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     line-height: 1.6;
   }
 a {

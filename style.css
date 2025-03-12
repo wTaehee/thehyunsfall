@@ -40,7 +40,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2; /* Set a higher z-index to keep it above the background */
-  font-family: "adobe-myungjo-std", sans-serif;
+  font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
   font-size: 1.25rem;
   text-shadow:15px 15px 15px rgba(0, 0, 0, 0.904);
   /* -webkit-text-stroke: rgba(0, 0, 0) .2px; */

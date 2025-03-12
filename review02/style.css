@@ -32,7 +32,7 @@
     left: 0;
     right: 0;
     justify-content: space-between;
-    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     align-items: center;
     padding: 10px 20px;
     color: white;
@@ -69,7 +69,7 @@
   
   .dropbtn {
     background-color: transparent;
-    font-family: "이슬아손글씨", "tdregular", "Nanum Pen Script";
+    font-family: "AppleMyungjo","adobe-myungjo-std", sans-serif;
     font-size: 17px;
     color: white;
     padding: 8px 50px;
